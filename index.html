@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Ads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            position: relative;
+            min-height: 100vh;
+        }
+        .top-text {
+            background-color: #ffeb3b;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .content {
+            max-width: 800px;
+            width: 100%;
+            padding: 60px 20px 20px 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .links a {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative;
+            z-index: 10;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+        }
+        .ads {
+            margin: 20px 0;
+            text-align: center;
+        }
+        /* Banner ads */
+        .banner-top, .banner-side, .banner-mid {
+            position: fixed;
+            background: #fff;
+            border: 1px solid #ccc;
+            z-index: 999;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .banner-top {
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 468px;
+            height: 60px;
+        }
+        .banner-side {
+            top: 100px;
+            right: 0;
+            width: 160px;
+            height: 600px;
+        }
+        .banner-mid {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 250px;
+        }
+        /* Pop-up modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+        }
+        .close-btn {
+            color: #aaa;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* Buttons with ads */
+        .ad-button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .ad-button:hover {
+            background-color: #218838;
+        }
+        .ad-button .ad-text {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background: red;
+            color: white;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .top-text {
+                font-size: 16px;
+                padding: 8px;
+            }
+            .content {
+                padding: 80px 10px 10px 10px;
+            }
+            .links a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            .banner-side {
+                display: none;
+            }
+            .banner-mid {
+                width: 90%;
+                height: auto;
+                top: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-text">
+        Click on any link and refresh and do 5 times
+    </div>
+    <div class="content">
+        <div class="links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+        <div class="ads">
+            <!-- Ad 1 -->
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'a2794475239285c664083c7fffe5e748',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/a2794475239285c664083c7fffe5e748/invoke.js"></script>
+        </div>
+        <div class="ads">
+            <!-- Ad 2 -->
+            <script type='text/javascript' src='//pl27694657.revenuecpmgate.com/9f/a5/bb/9fa5bbf462e4d05585ba0af7a65947d4.js'></script>
+        </div>
+        <div class="ads">
+            <!-- Ad 3 -->
+            <iframe src="https://www.revenuecpmgate.com/exsz069g8?key=047ba7c8dd7f827496769db7c64ea80b" width="468" height="60" frameborder="0"></iframe>
+        </div>
+        <div class="ads">
+            <!-- Ad 4 -->
+            <script type='text/javascript' src='//pl27699630.revenuecpmgate.com/2a/a1/b4/2aa1b44ee0021ecd9cecdb8dc156243d.js'></script>
+        </div>
+        <div class="ads">
+            <!-- Ad 5 -->
+            <script async="async" data-cfasync="false" src="//pl27699646.revenuecpmgate.com/bd929b22be587c72dfe1f284418813f4/invoke.js"></script>
+            <div id="container-bd929b22be587c72dfe1f284418813f4"></div>
+        </div>
+    </div>
+
+    <!-- Banner Ads -->
+    <div class="banner-top">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'a2794475239285c664083c7fffe5e748',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/a2794475239285c664083c7fffe5e748/invoke.js"></script>
+    </div>
+    <div class="banner-side">
+        <script type='text/javascript' src='//pl27694657.revenuecpmgate.com/9f/a5/bb/9fa5bbf462e4d05585ba0af7a65947d4.js'></script>
+    </div>
+    <div class="banner-mid">
+        <iframe src="https://www.revenuecpmgate.com/exsz069g8?key=047ba7c8dd7f827496769db7c64ea80b" width="300" height="250" frameborder="0"></iframe>
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Special Offer!</h2>
+            <p>Check out our exclusive deals now!</p>
+            <button class="ad-button" id="modalAdBtn">Click Me</button>
+        </div>
+    </div>
+
+    <!-- Buttons with ads -->
+    <div style="text-align:center; margin: 20px;">
+        <button class="ad-button">Ad Button 1 <span class="ad-text">Ad</span></button>
+        <button class="ad-button">Ad Button 2 <span class="ad-text">Ad</span></button>
+        <button class="ad-button">Ad Button 3 <span class="ad-text">Ad</span></button>
+        <button class="ad-button">Ad Button 4 <span class="ad-text">Ad</span></button>
+    </div>
+
+    <script>
+        // Show popup modal after 3 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('popupModal').style.display = 'block';
+            }, 3000);
+
+            // Automatically click ads after 5 seconds
+            setTimeout(function() {
+                // Simulate clicks on ad buttons
+                var adButtons = document.querySelectorAll('.ad-button');
+                adButtons.forEach(function(btn) {
+                    btn.click();
+                });
+
+                // Simulate click on modal ad button if visible
+                var modalAdBtn = document.getElementById('modalAdBtn');
+                if (modalAdBtn && modalAdBtn.offsetParent !== null) {
+                    modalAdBtn.click();
+                }
+
+                // Simulate clicks on banner ads (if they have clickable elements)
+                var bannerTop = document.querySelector('.banner-top');
+                if (bannerTop) {
+                    bannerTop.click();
+                }
+                var bannerSide = document.querySelector('.banner-side');
+                if (bannerSide) {
+                    bannerSide.click();
+                }
+                var bannerMid = document.querySelector('.banner-mid');
+                if (bannerMid) {
+                    bannerMid.click();
+                }
+            }, 5000);
+        };
+
+        // Close modal on clicking close button
+        document.getElementById('closeModal').onclick = function() {
+            document.getElementById('popupModal').style.display = 'none';
+        };
+
+        // Close modal on clicking outside modal content
+        window.onclick = function(event) {
+            var modal = document.getElementById('popupModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        // Example ad button click handler
+        document.getElementById('modalAdBtn').onclick = function() {
+            alert('Ad button clicked! Redirecting...');
+            // You can add redirect or other ad logic here
+        };
+    </script>
+</body>
+</html>
